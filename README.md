@@ -1,21 +1,7 @@
-# Wifi_Activity_Recognition using LSTM
+# Through Wall Activity Recognition System using LSTM
+Captured diverse human activities within a closed room using Wi-Fi CSI channel data.
 
-Latest dataset & Tensorflow code for IEEE Communication Magazine.  
-Title: [A Survey on Behaviour Recognition Using WiFi Channel State Information](http://ieeexplore.ieee.org/document/8067693/)
-
-Work by Siamak Yousefi, Hirokazu Narui, Sankalp Dayal, [Stefano Ermon](http://cs.stanford.edu/~ermon), Shahrokh Valaee
-
-Modified and optimised by :<br>
-Contributors:<br>
-Shivam Raisharma, <br>
-Kaustubh Shete<br>
-for Intrusion Detection and Alert System
-
-#To Do :  convert into a tf2 pipeline and procure a chip that is compatible with existing csi tools
-
-<br/>
-
-## Prerequisite
+Prerequisite
 
 Tensorflow >= 1.0  
 numpy  
@@ -23,11 +9,10 @@ pandas
 matplotlib  
 scikit-learn  
 
-<br/>
 
-## How to run
+How to run
 0. Download dataset from [here](https://drive.google.com/file/d/19uH0_z1MBLtmMLh8L4BlNA0w-XAFKipM/view?usp=sharing)  
- -> **Notice: Dataset size is ~4GB as a zip file**
+ -> *Notice: Dataset size is ~4GB*
 
 1. "git clone" this repository.  
  
@@ -37,8 +22,8 @@ scikit-learn
 3. Run the cross_vali_recurrent_network_wifi_activity.py 
  -> This script makes learning curve images & confusion matrix in a new folder.　　
 
-## Dataset
-We collect dataset using [Linux 802.11n CSI Tool](https://dhalperi.github.io/linux-80211n-csitool/).  
+#Dataset
+Collected dataset using [Linux 802.11n CSI Tool](https://dhalperi.github.io/linux-80211n-csitool/).  
 
 The files with "input_" prefix are WiFi Channel State Information data.  
  -> 1st column shows timestamp.  
@@ -47,5 +32,5 @@ The files with "input_" prefix are WiFi Channel State Information data.
  
 The files with "annotation_" prefix are annotation data.
 
-## Jupyter notebook
-[PCA_STFT](https://github.com/ermongroup/Wifi_Activity_Recognition/blob/master/PCA_STFT_visualize.ipynb) file visualize the data from .csv file. This code refers to [CARM](https://www.cse.msu.edu/~alexliu/publications/WeiCARM/WeiCARM_MOBICOM15.pdf).
+#Jupyter notebook
+(https://github.com/ermongroup/Wifi_Activity_Recognition/blob/master/PCA_STFT_visualize.ipynb) file visualize the data from .csv file. 
